@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tpo.lab2.integration.SecFromCosIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-26T18:29:19.970Z" hostname="KDOs-MacBook-Air.local" time="0.001">
-  <properties/>
-  <testcase name="computes sec via cos stub and respects domain()" classname="tpo.lab2.integration.SecFromCosIntegrationTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
