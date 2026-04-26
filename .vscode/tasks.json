@@ -1,0 +1,60 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Final verification tests",
+			"type": "shell",
+			"command": "gradle",
+			"args": [
+				"test"
+			],
+			"group": "test"
+		},
+		{
+			"label": "Run tests after MockK update",
+			"type": "shell",
+			"command": "gradle",
+			"args": [
+				"test"
+			],
+			"group": "test"
+		},
+		{
+			"label": "Re-run tests after matcher fix",
+			"type": "shell",
+			"command": "gradle",
+			"args": [
+				"test"
+			],
+			"group": "test"
+		},
+		{
+			"label": "Run tests with Mockito JUnit",
+			"type": "shell",
+			"command": "gradle",
+			"args": [
+				"test"
+			],
+			"group": "test"
+		},
+		{
+			"label": "Run tests after JVM target fix",
+			"type": "shell",
+			"command": "gradle",
+			"args": [
+				"test"
+			],
+			"group": "test"
+		},
+		{
+			"label": "Generate Example CSV",
+			"type": "shell",
+			"command": "gradle",
+			"args": [
+				"run",
+				"--args=--module system --from -2 --to 2 --step 0.5 --eps 1e-6 --out results/system_output.csv"
+			],
+			"group": "build"
+		}
+	]
+}
