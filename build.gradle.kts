@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "2.3.0"
     application
+    jacoco
 }
 
 group = "tpo.lab2"
@@ -30,6 +31,16 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    finalizedBy(tasks.jacocoTestReport)
+}
+
+tasks.jacocoTestReport {
+    dependsOn(tasks.test)
+
+    reports {
+        xml.required.set(true)
+        html.required.set(true)
+    }
 }
 
 application {
